@@ -173,28 +173,79 @@
 
     <!-- level section -->
     <section class="w-11/12 mx-auto mt-16 md:mt-36">
-        <h1 class="text-2xl md:text-3xl font-bold mb-7 text-center">
-          <span class="text-[#339cff]">Let's</span> Learn Vocabularies
-        </h1>
-        <div id="level-container" class="flex flex-wrap items-center justify-center px-1 gap-5">
-          <!-- <button class="btn btn-outline btn-primary">
+      <h1 class="text-2xl md:text-3xl font-bold mb-7 text-center">
+        <span class="text-[#339cff]">Let's</span> Learn Vocabularies
+      </h1>
+      <div
+        id="level-container"
+        class="flex flex-wrap items-center justify-center px-1 gap-5"
+      >
+        <!-- <button class="btn btn-outline btn-primary">
             <i class="ri-book-open-fill"></i>Lesson -1
           </button> -->
-        </div>
+      </div>
     </section>
 
-    <section id="vocabulary-container" class="w-11/12 mx-auto mt-10 bg-[#F8F8F8] p-16 rounded-3xl grid grid-cols-3 gap-4">
-        <div class="flex flex-col col-span-3 gap-2 items-center justify-center">
-            <p class="text-[#79716B] text-sm font-bangla">আপনি এখনো কোন Lesson Select করেননি।</p>
-            <h4 class="font-bangla font-medium text-3xl">একটি Lesson Select করুন।</h4>
-        </div>
+    <!-- search -->
+    <section class="flex items-center justify-center pt-10">
+      <!-- <div class="join">
+          <div>
+            <label class="input validator join-item">
+              <input id="search-input" type="text" placeholder="Search" />
+            </label>
+          </div>
+          <button id="search-btn" class="btn btn-primary join-item">Search</button>
+        </div> -->
+      <label class="input">
+        <svg
+          class="h-[1em] opacity-50"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </g>
+        </svg>
+        <input id="search-input"  type="search"  placeholder="Search" />
+      </label>
+    </section>
 
-        <!-- <div>
+    <!-- spinner -->
+    <section id="spinner" class="flex items-center justify-center py-16 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
+
+    <section
+      id="vocabulary-container"
+      class="w-11/12 mx-auto mt-10 bg-[#F8F8F8] p-16 rounded-3xl grid grid-cols-3 gap-4"
+    >
+      <div class="flex flex-col col-span-3 gap-2 items-center justify-center">
+        <p class="text-[#79716B] text-sm font-bangla">
+          আপনি এখনো কোন Lesson Select করেননি।
+        </p>
+        <h4 class="font-bangla font-medium text-3xl">
+          একটি Lesson Select করুন।
+        </h4>
+      </div>
+      <!-- <div class="flex flex-col col-span-3 gap-2 items-center justify-center">
+            <img src="./assets/alert-error.png" alt="">
+            <p class="text-[#79716B] text-sm font-bangla">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h4 class="font-bangla font-medium text-3xl">নেক্সট Lesson এ যান</h4>
+        </div> -->
+
+      <!-- <div>
             <div class="bg-white rounded-xl py-14 px-8">
                  
                 <div class="space-y-4 text-center">
                     <h4 class="text-3xl font-bold">Eager</h4>
-                    <p class="text-xl font-medium">Meaning /Pronounciation</p>
+                    <p class="text-xl font-medium">Meaning /Pronunciation</p>
                     <h4 class="font-bangla text-3xl font-semibold text-[#18181B]">"আগ্রহী / ইগার"</h4>
                 </div>
 
@@ -206,8 +257,33 @@
         </div>  -->
     </section>
 
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_2.showModal()">open modal</button> -->
+      <dialog id="my_modal_2" class="modal">
+        <!-- <div class="modal-box  ">
+          <div class="border-[#EDF7FF] border-2 p-5 rounded-lg">
+            <h1 class="text-4xl font-semibold mb-8">Eager (<span><i class="ri-mic-ai-fill"></i></span>:ইগার)</h1>
+            <p class="text-2xl font-semibold mb-3">Meaning</p>
+            <p class="text-2xl font-medium mb-8">আগ্রহী</p>
+            <p class="text-2xl font-semibold mb-3">Example</p>
+            <p class="text-2xl font-normal mb-8">The kids were eager to open their gifts.</p>
+            <p class="text-2xl font-semibold mb-3">সমার্থক শব্দ গুলো</p>
+            <div>
+              <button>Enthusiastic</button>
+              <button>Enthusiastic</button>
+              <button>Enthusiastic</button>
+            </div>
+          </div>
+          <div class="mt-4"><button class="btn btn-primary">Complete Learning</button></div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form> -->
+      </dialog>
+    </section>
 
     <!-- scripts -->
-     <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
